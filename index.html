@@ -399,17 +399,23 @@
         </ul>
     </div>
 
-    <div class="Subscribe-container">
-      <p class="subscribe-title">Subscribe to the newsletter</p>
-      <form class="subscribe-form-class">
-          <input class="subscribe-email" type="email" name="email" placeholder="E-mail">
-          <button class="Subscribe-button" type="submit">Subscribe
-              <svg class="icon-subscribe" width="24" height="24">
-                  <use href="./images/sprite-modal.svg#icon-icon-send"></use>
-              </svg>
-          </button>
+    <div class="subscribe-form-container">
+      <p>SUBSCRIBE TO THE NEWSLETTER</p>
+      <form name="subscribe-form" class="subscribe-form-class">
+        <input
+          type="email"
+          name="email-input"
+          placeholder="E-mail"
+          class="email-input-element"
+        />
+        <button type="submit" class="subscribe-button">
+          Subscribe
+          <svg width="24" height="24" class="subscribe-send-svg">
+            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+          </svg>
+        </button>
       </form>
-  </div>
+    </div>
 
 
   </div>
@@ -427,12 +433,12 @@
     Leave your information and we'll call you back
    </p>
    <div class="modal-form-field">
-   <label for="name" class="modal-label">name</label>
+   <label for="name" class="modal-label">Name</label>
    <div class="input-wrapper">
     <input 
     id="name" 
     type="text" 
-    placeholder="Enter your name" 
+     
     class="modal-input" 
     minlength="2" 
     name="name" 
@@ -450,7 +456,7 @@
    <input 
    id="phone" 
    type="tel" 
-   placeholder="+44 (0XX)XXX XXX" 
+  
    class="modal-input" 
    minlength="9" 
    name="phone" 
@@ -466,8 +472,8 @@
   <div class="input-wrapper">
    <input 
    id="mail" 
-   type="email" 
-   placeholder="example@mail.com" 
+   type="Email" 
+   
    class="modal-input" 
    minlength="3" 
    name="mail" 
@@ -479,7 +485,7 @@
 </div>
 
 <div class="modal-form-field">
-  <label for ="comments" class="modal-label">comments</label>
+  <label for ="comments" class="modal-label">Comments</label>
   <textarea 
   name="comments"
    id="comments" 
@@ -492,11 +498,14 @@
   class="modal-checkbox visually-hidden" required/>
   <label for="check" class="checkbox-text">
     <span class="checkbox-icon-wrapper">
-    <svg class="checkbox-icon" widht="7" height="5">
+    <svg class="checkbox-icon" width="11" height="8">
       <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
   </svg>
    </span>
-    I agree with the newsletter and accept the Terms and conditions
+   <span class="agree-to-terms-and-conditions">
+    I agree with the newsletter and accept the <a href="index.html" class="terms-and-conditions"> Terms and <br/>
+    <span class="condition-span"> conditions</span></a>
+  </span>
   </label>
 </div>
 <div class="btton-send"> 
