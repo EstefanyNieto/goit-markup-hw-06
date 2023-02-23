@@ -279,16 +279,16 @@ background-color: var(--request-our-service-hover-color);
 /*send button for modal window*/
 
 .modal-text{
-font-weight:600;
-text-transform: lowercase;
+font-weight:700;
 Font-size: 20px;
-Line-height:calc(28/19);
 color:#212121;
 margin-bottom:20px;
-
+line-height: 23px;
+text-align:center;
+letter-spacing:  0.03em;
 }
 .modal-form-field{
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .modal-label{
 Font-family: Roboto;
@@ -297,19 +297,19 @@ Font-size: 12px;
 Line-height:calc(18/12);
 color:#757575;
 display: block;
-margin-bottom:8px;
+margin-bottom:4px;
 }
 .input-wrapper{
   display: block;
   position: relative;
 }
 .modal-input{
-  border: 1px solid color#757575;
-  border-radius: 9px;
-  height:50px;
+  border: 1px solid#757575;
+  border-radius: 4px;
+  height:40px;
   width: 100%;
   cursor:pointer;
-  padding: 15px 0 15px 57px;
+  padding: 12px 0 12px 42px;
 
 
 font-family:'reboto';
@@ -383,11 +383,12 @@ color:#757575;
   width: 15px;
   height:15px;
   border: 1px solid black;
-  border-radius:4px;
-
-  display:flex;
+  border-radius: 2px;
+  margin-right: 9px;
+  display: flex;
   align-items:center;
   justify-content:center;
+  transition: border var(--time-ms) var(--time-function);
 
 }
 
@@ -402,10 +403,8 @@ color:#757575;
   display: flex;
   align-items: center;
 }
-.btton-send {
-  position: relative;
-  margin-bottom: 40px;
-  }
+
+  
 .button-send{
   padding: 10px 70px;
   background-color: #2196F3;
@@ -421,10 +420,11 @@ color:#757575;
   border: 0;
   cursor: pointer;
   left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
+  display: block;
+  margin:15px auto 0 auto;
   
 }
+
 
 .agree-to-terms-and-conditions,
 .terms-and-conditions{
@@ -434,6 +434,10 @@ color:#757575;
     letter-spacing: 0.03em;
     color: #757575;
     text-decoration: none;
+}
+
+.checkbox-text{
+  display: flex;
 }
 /*FEATURES*/
 
