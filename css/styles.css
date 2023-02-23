@@ -768,7 +768,7 @@ color: var(--webstudio-link-color);
 
 .subscribe-form-class{
   display: flex;
-  margin-left: 94px;
+  margin-left: 89px;
 }
 .subscribe-form-container > p{
   font-weight: 700;
@@ -778,7 +778,10 @@ color: var(--webstudio-link-color);
   text-transform: uppercase;
   color: white;
   margin-bottom: 20px;
-  margin-left: 94px;
+  margin-left: 89px;
+  margin-right: 219px;
+  display: flex;
+  
 }
 .email-input-element {
   width: 358px;
